@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Bergerak - Klik ke Link</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    a.full-link {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      text-decoration: none;
+      color: inherit;
+      background: radial-gradient(circle, #fff0f5, #ffd6eb);
+      font-family: 'Sacramento', cursive;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    svg {
+      width: 400px;
+      height: 400px;
+      animation: heartbeat 2s infinite ease-in-out;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      25% { transform: scale(1.05); }
+      50% { transform: scale(0.95); }
+      75% { transform: scale(1.02); }
+    }
+
+    .heart {
+      fill: none;
+      stroke: hotpink;
+      stroke-width: 1.5;
+      opacity: 0.7;
+    }
+
+    .text {
+      font-size: 2.2em;
+      color: deeppink;
+      margin-top: -40px;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+      text-shadow: 1px 1px 3px rgba(255, 105, 180, 0.4);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .note {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #ff69b4;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="full-link" href="https://contoh.com" target="_blank">
+    <div class="container">
+      <svg viewBox="-50 -50 100 100">
+        <!-- Banyak garis love -->
+        <path class="heart" d="M 0 -10 C 10 -25, 40 -25, 40 0 C 40 25, 0 45, 0 60 C 0 45, -40 25, -40 0 C -40 -25, -10 -25, 0 -10 Z" transform="scale(0.2)"/>
+        <path class="heart" d="M 0 -10 C 10 -25, 40 -25, 40 0 C 40 25, 0 45, 0 60 C 0 45, -40 25, -40 0 C -40 -25, -10 -25, 0 -10 Z" transform="scale(0.3)"/>
+        <path class="heart" d="M 0 -10 C 10 -25, 40 -25, 40 0 C 40 25, 0 45, 0 60 C 0 45, -40 25, -40 0 C -40 -25, -10 -25, 0 -10 Z" transform="scale(0.4)"/>
+        <path class="heart" d="M 0 -10 C 10 -25, 40 -25, 40 0 C 40 25, 0 45, 0 60 C 0 45, -40 25, -40 0 C -40 -25, -10 -25, 0 -10 Z" transform="scale(0.5)"/>
+        <path class="heart" d="M 0 -10 C 10 -25, 40 -25, 40 0 C 40 25, 0 45, 0 60 C 0 45, -40 25, -40 0 C -40 -25, -10 -25, 0 -10 Z" transform="scale(0.6)"/>
+        <path class="heart" d="M 0 -10 C 10 -25, 40 -25, 40 0 C 40 25, 0 45, 0 60 C 0 45, -40 25, -40 0 C -40 -25, -10 -25, 0 -10 Z" transform="scale(0.7)"/>
+        <path class="heart" d="M 0 -10 C 10 -25, 40 -25, 40 0 C 40 25, 0 45, 0 60 C 0 45, -40 25, -40 0 C -40 -25, -10 -25, 0 -10 Z" transform="scale(0.8)"/>
+        <path class="heart" d="M 0 -10 C 10 -25, 40 -25, 40 0 C 40 25, 0 45, 0 60 C 0 45, -40 25, -40 0 C -40 -25, -10 -25, 0 -10 Z" transform="scale(0.9)"/>
+      </svg>
+
+      <div class="text">
+        "Cintaku berdenyut lembut seperti detak jantung,<br>
+        hidup dalam tiap lapis kasih yang tak berakhir 💓"
+      </div>
+
+      <div class="note">Klik di mana saja untuk membuka link</div>
+    </div>
+  </a>
+
+</body>
+</html>
